@@ -1,0 +1,21 @@
+X_train=[];
+Y_train=[];
+
+
+%Z= 388.351; 
+ n=10;
+
+for i=1:n
+% Collect the X and Y values 
+
+x= input('Enter the X value');
+y= input('Enter the Y value');
+
+%Concatenate and create a matrix 
+X_train= vertcat(X_train,x);
+Y_train= vertcat(Y_train,y);
+fprintf('This is the %d th image \n',i);
+end 
+
+save X_train2.mat X_train;
+save Y_train2.mat Y_train;
